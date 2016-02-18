@@ -1,0 +1,4 @@
+services:
+#    wp_association.example:
+#        class: wp\AssociationBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

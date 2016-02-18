@@ -1,0 +1,4 @@
+wp_association:
+    resource: "@wpAssociationBundle/Controller/"
+    type:     annotation
+    prefix:   /
