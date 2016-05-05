@@ -2,12 +2,154 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Association Bayngam{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+            <link rel="stylesheet" href="{{ asset('css/jumbotron.css') }}">
+
+
+
+
+            <link rel='stylesheet' href="{{ asset('css/font-awesome.min.css') }}"/>
+            <link rel='stylesheet' href="{{ asset('css/feather.min.css') }}"/>
+
+            <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+
+            <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/style2.css') }}">
+            <script src="{{ asset('js/modernizr.js') }}"></script>
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
+
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+      <div class="page-container">
+        {% block nav %}
+        <div class="bloc l-bloc bgc-white" id="nav-bloc">
+          <div class="container bloc-sm b-divider">
+            <nav class="navbar row">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="{{ asset('img/arbaf-nord-logo.gif') }}" alt="logo" height="50" /></a>
+                <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+                  <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse navbar-1">
+                <ul class="site-navigation nav navbar-nav">
+                  <li>
+                    <a href="{{ path('rj_by_homepage') }}">Accueil</a>
+                  </li>
+                  <li>
+                    <div class="dropdown">
+                      <a href="#" class="dropdown-toggle" id="pl-1" data-toggle="dropdown" aria-expanded="false">Organisation<span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li>
+                          <a href="{{ path('rj_by_equipe') }}" class="a-btn a-block">Notre Équipe</a>
+                        </li>
+                        <li>
+                          <a href="{{ path('rj_by_but') }}" class="a-btn a-block">Notre But</a>
+                        </li>
+                        <li>
+                          <a href="{{ path('rj_by_action') }}" class="a-btn a-block">Nos Actions Préliminaires</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown">
+                      <a href="#" class="dropdown-toggle" id="pl-1" data-toggle="dropdown" aria-expanded="true">Soutien<span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li>
+                          <a href="{{ path('rj_by_soutien') }}" class="a-btn a-block">Ils nous soutiennent</a>
+                        </li>
+                        <li>
+                          <a href="{{ path('rj_by_aide') }}" class="a-btn a-block">Comment nous aider ?</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown">
+                      <a href="#" class="dropdown-toggle" id="pl-1" data-toggle="dropdown" aria-expanded="true">Archives<span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li>
+                          <a href="{{ path('rj_by_archives', { 'annee': 2016 }) }}" class="a-btn a-block">Année 2016</a>
+                        </li>
+                        <li>
+                          <a href="{{ path('rj_by_archives', { 'annee': 2015 }) }}" class="a-btn a-block">Année 2015</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown">
+                      <a href="#" class="dropdown-toggle" id="pl-1" data-toggle="dropdown" aria-expanded="true">Ressources<span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li>
+                          <a href="{{ path('rj_by_galerie') }}" class="a-btn a-block">Galerie</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="{{ path('rj_by_cantact') }}">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        {% endblock %}
+        {% block body %}
+
+        {% endblock %}
+        {% block footer %}
+        <div class="bloc d-bloc bgc-dark-cerulean" id="bloc-9">
+        	<div class="container bloc-sm">
+        		<div class="row">
+        			<div class="col-sm-12">
+        				<h6 class=" mg-clear">
+        					<strong>L&rsquo;équipe en bref :</strong>
+        				</h6>
+        			</div>
+        		</div>
+        		<div class="row voffset">
+        			<div class="col-sm-3">
+        				<img src="{{ asset('img/ract.jpg') }}" class="center-block img-circle" width="60" height="70" />
+        				<h3 class="text-center mg-sm ">
+        					Sylvain RACT
+        				</h3>
+        			</div>
+        			<div class="col-sm-3">
+        				<img src="{{ asset('img/mehyaoui.jpg') }}" class="center-block img-circle" width="60" height="70" />
+        				<h3 class="text-center sm-shadow mg-sm ">
+        					Selma MEYHAOUI
+        				</h3>
+        			</div>
+        			<div class="col-sm-3">
+        				<img src="{{ asset('img/montane.jpg') }}" class="center-block img-circle" width="60" height="70" />
+        				<h3 class="text-center sm-shadow mg-sm ">
+        					Jonathan MONTANÉ
+        				</h3>
+        			</div>
+        			<div class="col-sm-3">
+        				<img src="{{ asset('img/bolbenes.jpg') }}" class="center-block img-circle" width="60" height="70" />
+        				<h3 class="text-center sm-shadow mg-sm ">
+        					Guillaume BOLBÈNES
+        				</h3>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        {% endblock %}
+        </div>
+        {% block javascripts %}
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+          	<script src="{{ asset('js/blocs.js') }}"></script>
+            <script src="{{ asset('js/main.js') }}"></script>
+        {% endblock %}
+
     </body>
 </html>

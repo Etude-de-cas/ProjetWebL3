@@ -1,4 +1,3 @@
-wp_association:
-    resource: "@wpAssociationBundle/Controller/"
-    type:     annotation
+rj_bundle_by:
+    resource: "@wpAssociationBundle/Resources/config/routing.yml"
     prefix:   /

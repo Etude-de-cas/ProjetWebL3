@@ -1,0 +1,29 @@
+rj_by_homepage:
+    path:     /
+    defaults: { _controller: wpAssociationBundle:Home:index }
+rj_by_archives:
+    path:     /archives/{annee}
+    defaults: { _controller: wpAssociationBundle:Home:archives }
+    requirements:
+        s:  \d+
+rj_by_cantact:
+    path:     /contact
+    defaults: { _controller: wpAssociationBundle:Home:contact }
+rj_by_action:
+    path:     /organisation/action
+    defaults: { _controller: wpAssociationBundle:Home:nosactions }
+rj_by_but:
+    path:     /organisation/but
+    defaults: { _controller: wpAssociationBundle:Home:but }
+rj_by_equipe:
+    path:     /organisation/equipe
+    defaults: { _controller: wpAssociationBundle:Home:equipe }
+rj_by_galerie:
+    path:     /resources/galerie
+    defaults: { _controller: wpAssociationBundle:Home:galerie }
+rj_by_aide:
+    path:     /soutien/aide
+    defaults: { _controller: wpAssociationBundle:Home:aide }
+rj_by_soutien:
+    path:     /soutien/soutien
+    defaults: { _controller: wpAssociationBundle:Home:soutien }
