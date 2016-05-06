@@ -7,3 +7,13 @@ services:
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+    admin.articles:
+        class: wp\AssociationBundle\Admin\ArticlesAdmin
+        arguments: [~, wp\AssociationBundle\Entity\Articles, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Articles }
+    admin.auteur:
+        class: wp\AssociationBundle\Admin\AuteurAdmin
+        arguments: [~, wp\AssociationBundle\Entity\Auteur, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Auteur }

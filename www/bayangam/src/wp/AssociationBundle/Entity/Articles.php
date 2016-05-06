@@ -57,10 +57,14 @@ class Articles
     private $dateEvenement;
 
 
+    public function __construct()
+    {
+        $this->dateAjout = new \Datetime();
+    }
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -83,7 +87,7 @@ class Articles
     /**
      * Get auteur
      *
-     * @return string 
+     * @return string
      */
     public function getAuteur()
     {
@@ -106,7 +110,7 @@ class Articles
     /**
      * Get titre
      *
-     * @return string 
+     * @return string
      */
     public function getTitre()
     {
@@ -129,7 +133,7 @@ class Articles
     /**
      * Get article
      *
-     * @return string 
+     * @return string
      */
     public function getArticle()
     {
@@ -152,7 +156,7 @@ class Articles
     /**
      * Get dateAjout
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getDateAjout()
     {
@@ -175,7 +179,7 @@ class Articles
     /**
      * Get dateEvenement
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getDateEvenement()
     {
