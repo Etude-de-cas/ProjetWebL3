@@ -12,7 +12,17 @@ class HomeController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('wpAssociationBundle:Home:index.html.twig');
+      $news = $this->getDoctrine()
+      ->getRepository('wpAssociationBundle:Articles')
+      ->findAll();
+
+      if (!$news)
+      {
+        throw $this->createNotFoundException(
+        'Aucune news'
+      );
+      }
+        return $this->render('wpAssociationBundle:Home:index.html.twig', array('news'=>$news));
     }
     public function archivesAction($annee)
     {

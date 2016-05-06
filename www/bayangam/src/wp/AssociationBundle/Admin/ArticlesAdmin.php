@@ -15,6 +15,8 @@ class ArticlesAdmin extends Admin
           ->add('auteur', 'text')
           ->add('titre', 'text')
           ->add('article', 'textarea')
+          ->add('contenu', 'text')
+          ->add('type', 'text')
           ->add('dateEvenement', 'date');
     }
 
