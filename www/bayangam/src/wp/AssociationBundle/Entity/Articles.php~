@@ -53,6 +53,7 @@ class Articles
      * @var \DateTime
      *
      * @ORM\Column(name="DateEvenement", type="date")
+     * @ORM\OrderBy({"DateEvenement" = "ASC"})
      */
     private $dateEvenement;
 
@@ -198,5 +199,51 @@ class Articles
     public function getDateEvenement()
     {
         return $this->dateEvenement;
+    }
+
+    /**
+     * Set type
+     *
+     * @param string $type
+     * @return Articles
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * Get type
+     *
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * Set contenu
+     *
+     * @param string $contenu
+     * @return Articles
+     */
+    public function setContenu($contenu)
+    {
+        $this->contenu = $contenu;
+
+        return $this;
+    }
+
+    /**
+     * Get contenu
+     *
+     * @return string
+     */
+    public function getContenu()
+    {
+        return $this->contenu;
     }
 }

@@ -53,6 +53,7 @@ class Articles
      * @var \DateTime
      *
      * @ORM\Column(name="DateEvenement", type="date")
+     * @ORM\OrderBy({"DateEvenement" = "ASC"})
      */
     private $dateEvenement;
 
@@ -216,7 +217,7 @@ class Articles
     /**
      * Get type
      *
-     * @return string 
+     * @return string
      */
     public function getType()
     {
@@ -239,7 +240,7 @@ class Articles
     /**
      * Get contenu
      *
-     * @return string 
+     * @return string
      */
     public function getContenu()
     {

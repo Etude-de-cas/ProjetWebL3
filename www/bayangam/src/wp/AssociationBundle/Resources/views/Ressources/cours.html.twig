@@ -1,0 +1,28 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}
+    Soutien
+{% endblock %}
+
+{% block body %}
+<!-- bloc-21 -->
+<div class="bloc l-bloc bgc-white tc-dark-cerulean-2" id="bloc-21">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="mg-sm">
+					<strong>Les cours</strong>
+				</h2>
+				<div class="divider-h">
+					<span class="divider"></span>
+				</div>
+				<h4 class="mg-md ">
+					Voici quelques exemples de TP proposé aux étudiants :
+				</h4><a href="{{ asset('pdf/1.pdf') }}" class="a-btn a-block">Jeu de caractères</a><a href="{{ asset('pdf/2.pdf') }}" class="a-btn a-block">Semaine n°2-Internet</a><a href="{{ asset('pdf/3.pdf') }}" class="a-btn a-block">Semaine n°3-Un peu de pratique en tableur</a><a href="{{ asset('pdf/4.pdf') }}" class="a-btn a-block">Semaine n°3-Internet</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-21 END -->
+
+{% endblock %}

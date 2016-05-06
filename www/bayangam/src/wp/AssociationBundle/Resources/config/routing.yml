@@ -21,9 +21,31 @@ rj_by_equipe:
 rj_by_galerie:
     path:     /resources/galerie
     defaults: { _controller: wpAssociationBundle:Home:galerie }
+rj_by_cours:
+    path:     /soutien/cours
+    defaults: { _controller: wpAssociationBundle:Home:cours }
+rj_by_blog:
+    path:     /soutien/blog
+    defaults: { _controller: wpAssociationBundle:Home:blog }
 rj_by_aide:
     path:     /soutien/aide
     defaults: { _controller: wpAssociationBundle:Home:aide }
 rj_by_soutien:
     path:     /soutien/soutien
     defaults: { _controller: wpAssociationBundle:Home:soutien }
+
+rj_by_blog1:
+    path:     /soutien/blog1
+    defaults: { _controller: wpAssociationBundle:Home:blog1 }
+
+rj_by_blog2:
+    path:     /soutien/blog2
+    defaults: { _controller: wpAssociationBundle:Home:blog2 }
+
+rj_by_blog3:
+    path:     /soutien/blog3
+    defaults: { _controller: wpAssociationBundle:Home:blog3 }
+
+rj_by_blog4:
+    path:     /soutien/blog4
+    defaults: { _controller: wpAssociationBundle:Home:blog4 }

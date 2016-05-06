@@ -56,4 +56,28 @@ class HomeController extends Controller
     {
         return $this->render('wpAssociationBundle:Soutien:soutien.html.twig');
     }
+    public function coursAction()
+    {
+        return $this->render('wpAssociationBundle:Ressources:cours.html.twig');
+    }
+    public function blogAction()
+    {
+        return $this->render('wpAssociationBundle:Ressources:blog.html.twig');
+    }
+    public function blog1Action()
+    {
+        return $this->render('wpAssociationBundle:Ressources:blog-guillaume.html.twig');
+    }
+    public function blog2Action()
+    {
+        return $this->render('wpAssociationBundle:Ressources:blog-jonathan.html.twig');
+    }
+    public function blog3Action()
+    {
+        return $this->render('wpAssociationBundle:Ressources:blog-selma.html.twig');
+    }
+    public function blog4Action()
+    {
+        return $this->render('wpAssociationBundle:Ressources:blog-sylvain.html.twig');
+    }
 }

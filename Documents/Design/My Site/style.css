@@ -16,14 +16,11 @@ a:hover{text-decoration: none; cursor:pointer;}
 a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safari */
 
 
-
-
-
+   
 
 
 /* Globals type styling */
-
- h1, h2, h3, h4, h5, h6, p, label, .btn, a{
+    h1, h2, h3, h4, h5, h6, p, label, .btn, a{
 	font-family:"Helvetica";
 }
 
@@ -169,10 +166,47 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 /* Bloc text custom styling */
 
-#bloc-9 h6{
-	font-size: 20px;
+#bloc-7 h3{
+	font-size: 18px;
+}
+#bloc-8 h3{
+	font-size: 18px;
 }
 #bloc-9 h3{
+	font-size: 18px;
+}
+#bloc-10 h3{
+	font-size: 18px;
+}
+#bloc-11 h3{
+	font-size: 18px;
+}
+#bloc-12 h3{
+	font-size: 18px;
+}
+#bloc-16 h4{
+	font-size: 16px;
+}
+#bloc-16 p{
+	font-family: Helvetica;
+	font-size: 22px;
+}
+#bloc-17 h3{
+	font-size: 18px;
+}
+#bloc-18 h3{
+	font-size: 18px;
+}
+#bloc-20 h3{
+	font-size: 18px;
+}
+#bloc-21 h4{
+	font-size: 16px;
+}
+#bloc-22 h6{
+	font-size: 20px;
+}
+#bloc-22 h3{
 	font-size: 16px;
 }
 
@@ -532,6 +566,15 @@ a[data-lightbox]:hover img{
 .tc-dark-cerulean{
 	color:#084783!important;
 }
+.tc-black{
+	color:#010100!important;
+}
+.tc-dark-cerulean-2{
+	color:#084783!important;
+}
+.tc-gray{
+	color:#808080!important;
+}
 /* Button colour styles */
 
 .wire-btn-dark-cerulean{
@@ -542,25 +585,25 @@ a[data-lightbox]:hover img{
 /* Bloc image backgrounds */
 
 .bg-2{
-	background-image:url('img/2.jpg');
+	background-image:url("img/2.jpg");
 }
 
 
 
-/* = Mobile adjustments
+/* = Mobile adjustments 
 -------------------------------------------------------------- */
 @media (max-width: 1024px)
 {
     .bloc{
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 20px; 
+        padding-right: 20px;  
     }
 }
 @media (max-width: 768px)
 {
     .container{width:100%;}
     .b-parallax{background-attachment:scroll;}
-    .page-container, #hero-bloc{overflow-x: hidden;position: relative;} /* Prevent unwanted side scroll on mobile */
+    .page-container, #hero-bloc{overflow-x: hidden;position: relative;} /* Prevent unwanted side scroll on mobile */  
 }
 @media (max-width: 767px)
 {
@@ -569,8 +612,8 @@ a[data-lightbox]:hover img{
         position:relative;
     }
     h1,h2,h3,h4,h5,h6,p{
-        padding-left:10px!important;
-        padding-right:10px!important;
+        padding-left:10px!important; 
+        padding-right:10px!important; 
     }
     #hero-bloc h1{
         font-size:40px;
@@ -582,8 +625,8 @@ a[data-lightbox]:hover img{
         font-size:25px;
     }
     .bloc{
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 0; 
+        padding-right: 0;  
         -webkit-background-size: auto 200%;
         -moz-background-size: auto 200%;
         -o-background-size: auto 200%;
@@ -592,7 +635,7 @@ a[data-lightbox]:hover img{
     .b-parallax{
         background-attachment:scroll;
     }
-
+    
     .navbar .nav{
         padding-top: 0;
         border-top:1px solid rgba(0,0,0,.2);
@@ -607,7 +650,7 @@ a[data-lightbox]:hover img{
 	   transform:none;
 	   -webkit-transform:none;
 	   -ms-transform:none;
-    }
+    }  
     .nav > li{
         margin-top: 0;
         border-bottom:1px solid rgba(0,0,0,.1);
@@ -641,17 +684,17 @@ a[data-lightbox]:hover img{
     .navbar-brand img{
         max-height: 40px;
         width:auto;
-        margin: -10px 10px 0 0;
+        margin: -10px 10px 0 0;    
     }
     .nav-invert .navbar-header{
         float: none;
         width:100%;
     }
     .nav-invert .navbar-toggle{
-        float:left;
+        float:left; 
     }
     .btn.pull-left, .btn.pull-right{
-       float:none!important;
+       float:none!important; 
     }
     .bloc-group .bloc{
          display:block;
@@ -665,14 +708,14 @@ a[data-lightbox]:hover img{
         padding: 40px 0;
     }
     .bloc-sm,.bloc-md{
-        padding-left: 0;
+        padding-left: 0; 
         padding-right: 0;
     }
     .a-block{
         padding:0 10px;
     }
     .btn-dwn{
-       display:none;
+       display:none; 
     }
     .voffset{
         margin-top:5px;
